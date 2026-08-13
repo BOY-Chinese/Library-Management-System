@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where python *)",
+      "Bash(where python3 *)",
+      "Bash(pip list *)",
+      "Bash(pip3 list *)",
+      "Bash(python -c \"import sys; print\\(sys.executable\\); print\\('---'\\); print\\('\\\\n'.join\\(sys.path\\)\\)\")",
+      "Bash(python -c \"import flask; print\\('flask OK'\\)\")",
+      "Bash(python -c \"import pymysql; print\\('pymysql OK'\\)\")",
+      "Bash(py --version)",
+      "Bash(py -0)",
+      "Read(//c/Program Files/**)",
+      "Read(//d/Lenovo/**)",
+      "Bash(reg query *)",
+      "Bash(conda --version)",
+      "Read(//c/Users/Lenovo/AppData/Local/Programs/Python/Python312/**)",
+      "Read(//c/Users/Lenovo/AppData/Local/Programs/Python//**)",
+      "Bash(\"/c/Users/Lenovo/AppData/Local/Programs/Python/Python312/python\" -c \"import flask; print\\('flask OK'\\)\")",
+      "Bash(\"/c/Users/Lenovo/AppData/Local/Programs/Python/Python312/python\" -c \"import pymysql; print\\('pymysql OK'\\)\")",
+      "Bash(pyinstaller --onefile --add-data \"test_frontend.html;.\" --hidden-import pymysql --hidden-import flask --hidden-import flask_cors --hidden-import tkinter --name \"图书馆管理系统\" --distpath \"D:\\\\Lenovo\\\\Desktop\" --clean app.py)",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"from controllers.admin import admin_bp, get_reader_types, update_reader_type; print\\('OK - all imports successful'\\)\")"
+    ]
+  }
+}

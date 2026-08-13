@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(curl -s http://localhost:5000/api/categories)",
+      "Bash(curl -s -X POST http://localhost:5000/api/admin/books -H \"Content-Type: application/json\" -d \"{\\\\\"图书名\\\\\":\\\\\"测试医学书\\\\\",\\\\\"作者\\\\\":\\\\\"测试\\\\\",\\\\\"类别号\\\\\":\\\\\"MED\\\\\",\\\\\"管理员编号\\\\\":1}\")",
+      "Bash(curl -s -X DELETE http://localhost:5000/api/admin/books/16)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5000/)",
+      "Bash(curl -s http://localhost:5000/api/books?limit=1)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\)['data']; print\\('keys:', list\\(d.keys\\(\\)\\)\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python -c \"lines=open\\('services/borrow_service.py',encoding='utf-8'\\).readlines\\(\\);print\\('line70:',repr\\(lines[69]\\)\\);print\\('line85:',repr\\(lines[84]\\)\\);print\\('line90:',repr\\(lines[89]\\)\\);print\\('line91:',repr\\(lines[90]\\)\\);print\\('line119:',repr\\(lines[118]\\)\\)\")"
+    ]
+  }
+}
